@@ -1,0 +1,13 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "IoTHubMessages",
+      "direction": "in",
+      "eventHubName": "hub-pg",
+      "connection": "EH",
+      "cardinality": "one",
+      "consumerGroup": "pg"
+    }
+  ]
+}
