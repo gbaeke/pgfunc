@@ -1,10 +1,10 @@
 var pg = require('pg');
     
 const config = {
-                    host: 'HOST',
-                    user: 'USER',     
-                    password: "PASSWORD",
-                    database: 'DATABASE',
+                    host: process.env["host"],
+                    user: process.env["user"],     
+                    password: process.env["password"],
+                    database: process.env["database"],
                     port: 5432,
                     ssl: true
 };
